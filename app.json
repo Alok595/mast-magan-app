@@ -1,42 +1,47 @@
 {
   "expo": {
-    "name": "mastmaganapp",
+    "name": "Mast Magan",
     "slug": "mastmaganapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/mast-magan-icon.jpg",
     "scheme": "mastmaganapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/mast-magan-icon.jpg"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#140C07",
+        "foregroundImage": "./assets/images/mast-magan-icon.jpg"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/mast-magan-icon.jpg"
+    },
+    "splash": {
+      "image": "./assets/images/premium-splash.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#140C07"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#140C07",
+          "image": "./assets/images/premium-splash.jpg",
+          "resizeMode": "cover"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": false
     }
   }
 }
